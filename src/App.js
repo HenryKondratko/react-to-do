@@ -11,7 +11,7 @@ function App() {
             <header>
                 <h1>To-Do List</h1>
             </header>
-            <Form setInputText={setInputText}/>
+            <Form todos ={todos} setTodos={setTodos} inputText={inputText}  setInputText={setInputText}/>
             <TodoList />
         </div>
     );
