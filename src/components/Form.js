@@ -4,10 +4,13 @@ const Form = (props) => {
     const inputTextHandler = (e) => {
         props.setInputText(e.target.value);
     };
+    const submitTodoHandler = (e) =>{
+      e.preventDefault();
+    };
     return (
         <form>
             <input onChange={inputTextHandler} type="text" className="todo-input"/>
-            <button className="todo-button" type="submit">
+            <button onClick={submitTodoHandler} className="todo-button" type="submit">
                 <i className="fas fa-plus-square"></i>
             </button>
             <div className="select">
